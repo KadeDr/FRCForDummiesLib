@@ -1,4 +1,4 @@
-package com.frcfordummies.rev.spark;
+package com.frcfordummies.rev.spark.max;
 
 import com.revrobotics.AbsoluteEncoder;
 import com.revrobotics.RelativeEncoder;
@@ -12,7 +12,7 @@ public abstract class MAXBase {
     public AbsoluteEncoder absoluteEncoder;
     public RelativeEncoder relativeEncoder;
     public SparkClosedLoopController CLC;
-    public SparkMaxConfig config;
+    public SparkMaxConfig config = new SparkMaxConfig();
     public MotorType motorType;
     public int id;
 
